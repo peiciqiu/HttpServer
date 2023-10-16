@@ -9,7 +9,7 @@
  * author.
  */
 
-#include "./FileReader.h"
+#include "../src/db/FileReader.h"
 
 #include "gtest/gtest.h"
 #include "./test_suite.h"

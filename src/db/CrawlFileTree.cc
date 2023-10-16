@@ -174,7 +174,7 @@ static void handle_file(const string& fpath, WordIndex *index) {
   // Search the string for all tokens, where anything that is
   // not an alphabetic character is considered a delimiter
   // A delimiter marks the end of a token and is not considered a valid part of the token
-  
+
   // Record each non empty token as a word into the Wordindex specified by *index
 
   // Your implementation should also be case in-sensitive and record every word in all lower-case

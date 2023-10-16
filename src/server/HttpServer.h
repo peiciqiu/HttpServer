@@ -18,7 +18,7 @@
 
 #include "./ThreadPool.h"
 #include "./ServerSocket.h"
-#include "./WordIndex.h"
+#include "../db/WordIndex.h"
 
 namespace searchserver {
 

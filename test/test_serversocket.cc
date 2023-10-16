@@ -16,9 +16,9 @@
 #include <cstdlib>
 
 #include "gtest/gtest.h"
-#include "./ServerSocket.h"
-#include "./HttpUtils.h"
-#include "./ThreadPool.h"
+#include "../src/server/ServerSocket.h"
+#include "../src/server/HttpUtils.h"
+#include "../src/server/ThreadPool.h"
 #include "./test_suite.h"
 
 using std::cout;

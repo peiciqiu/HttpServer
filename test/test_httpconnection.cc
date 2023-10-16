@@ -18,12 +18,12 @@ extern "C" {
 #include <sys/socket.h>
 #include <string>
 
-#include "./HttpConnection.h"
+#include "../src/server/HttpConnection.h"
 
 #include "gtest/gtest.h"
-#include "./HttpRequest.h"
-#include "./HttpResponse.h"
-#include "./HttpUtils.h"
+#include "../src/server/HttpRequest.h"
+#include "../src/server/HttpResponse.h"
+#include "../src/server/HttpUtils.h"
 #include "./test_suite.h"
 
 using std::string;
@@ -358,7 +358,7 @@ TEST(Test_HttpConnection, write_response) {
 
   int pipefds[2];
   pipe(pipefds);
-  
+
   HttpConnection connection(pipefds[1]);
   connection.write_response(response);
 

@@ -12,8 +12,8 @@
 #include "gtest/gtest.h"
 #include "./test_suite.h"
 
-#include "./CrawlFileTree.h"
-#include "./WordIndex.h"
+#include "../src/db/CrawlFileTree.h"
+#include "../src/db/WordIndex.h"
 
 namespace searchserver {
 

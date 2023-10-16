@@ -12,8 +12,8 @@
 #include <unistd.h>
 
 #include "gtest/gtest.h"
-#include "./ThreadPool.h"
-#include "./test_suite.h"
+#include "../src/server/ThreadPool.h"
+#include "../src/server/test_suite.h"
 
 
 namespace searchserver {

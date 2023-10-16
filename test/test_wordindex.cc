@@ -16,7 +16,7 @@
 #include "gtest/gtest.h"
 #include "./test_suite.h"
 
-#include "./WordIndex.h"
+#include "../src/db/WordIndex.h"
 
 using std::string;
 using std::vector;

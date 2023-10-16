@@ -17,7 +17,7 @@
 #include <string>
 #include <sstream>
 
-#include "./FileReader.h"
+#include "../db/FileReader.h"
 #include "./HttpConnection.h"
 #include "./HttpRequest.h"
 #include "./HttpUtils.h"
@@ -138,7 +138,7 @@ static void HttpServer_ThrFn(ThreadPool::Task *t) {
   HttpConnection connection (hst->client_fd);
   while (!done) {
     HttpRequest request;
-    
+
   }
 }
 
@@ -201,7 +201,7 @@ static HttpResponse ProcessFileRequest(const string &uri,
       // ret.set_protocol(req.GetHeaderValue("protocol"));
       // ret.set_response_code(stoi(req.GetHeaderValue("response")));
       // ret.set_message(req.GetHeaderValue("message"));
-      
+
       // map<string, string> content_type;
       // content_type[".html"]  = string("text/html");
       // content_type[".htm"] = string("text/html");

@@ -23,16 +23,16 @@ CPPUNITFLAGS = -L../gtest -lgtest
 OBJS_COMMON = ThreadPool.o ServerSocket.o HttpServer.o HttpConnection.o FileReader.o CrawlFileTree.o WordIndex.o
 OBJS_GOOD = $(OBJS_COMMON) HttpUtils.o
 
-HEADERS = HttpConnection.h \
-	  HttpServer.h \
-	  ServerSocket.h \
-	  ThreadPool.h \
-	  HttpUtils.h \
-	  HttpRequest.h HttpResponse.h \
-          CrawlFileTree.h \
-          WordIndex.h \
-          Result.h \
-	  FileReader.h
+HEADERS = src/server/HttpConnection.h \
+	  src/server/HttpServer.h \
+	  src/server/ServerSocket.h \
+	  src/server/ThreadPool.h \
+	  src/server/HttpUtils.h \
+	  src/server/HttpRequest.h src/server/HttpResponse.h \
+          src/db/CrawlFileTree.h \
+          src/db/WordIndex.h \
+          src/db/Result.h \
+	  src/db/FileReader.h
 
 TESTOBJS = test_filereader.o test_wordindex.o \
            test_crawlfiletree.o test_serversocket.o \

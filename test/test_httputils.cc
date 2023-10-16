@@ -15,8 +15,8 @@
 #include <unistd.h>
 #include <string>
 
-#include "./HttpUtils.h"
-#include "./FileReader.h"
+#include "../src/server/HttpUtils.h"
+#include "../src/db/FileReader.h"
 
 #include "gtest/gtest.h"
 #include "./test_suite.h"

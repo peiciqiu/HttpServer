@@ -23,7 +23,7 @@
 
 #include "./ServerSocket.h"
 #include "./HttpServer.h"
-#include "./CrawlFileTree.h"
+#include "../db/CrawlFileTree.h"
 
 using std::cerr;
 using std::cout;
@@ -63,7 +63,7 @@ int main(int argc, char **argv) {
   cout << "    path: " << static_dir << endl;
 
   searchserver::WordIndex *index = new searchserver::WordIndex();
- 
+
   if (!searchserver::crawl_filetree(static_dir, index)) {
     cerr << " failed to crawl the file directory" << endl;
     return EXIT_FAILURE;

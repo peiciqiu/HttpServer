@@ -16,7 +16,7 @@
 #include <sstream>
 #include <fstream>
 
-#include "./HttpUtils.h"
+#include "../server/HttpUtils.h"
 #include "./FileReader.h"
 
 using std::string;
@@ -33,9 +33,9 @@ bool FileReader::read_file(string *str) {
   // TODO: implement
   std::ifstream file(fname_);
   if(!file.is_open()) {return false;}
-  
-  file.seekg(0, std::ios::end);    
-  size_t size = file.tellg();           
+
+  file.seekg(0, std::ios::end);
+  size_t size = file.tellg();
   file.seekg(0, std::ios::beg);
 
   string buffer(size, ' ');
